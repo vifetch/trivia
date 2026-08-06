@@ -1,0 +1,150 @@
+.quiz-result {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.result-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.result-header h2 {
+  color: #333;
+  font-size: 32px;
+  margin: 0;
+}
+
+.result-content {
+  text-align: center;
+}
+
+.result-emoji {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.result-score {
+  margin: 20px 0;
+}
+
+.score-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+}
+
+.score-percentage {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.result-message {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 15px 0 30px;
+}
+
+.result-details {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0 30px;
+  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.detail-value {
+  color: #333;
+  font-weight: 600;
+}
+
+.result-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.play-again-btn,
+.view-history-btn {
+  padding: 14px 35px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.play-again-btn {
+  background: #6c757d;
+  color: white;
+}
+
+.play-again-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.view-history-btn {
+  background: #6c757d;
+  color: white;
+}
+
+.view-history-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 117, 125, 0.4);
+  background: #5a6268;
+}
+
+@media (max-width: 768px) {
+  .score-number {
+    font-size: 36px;
+  }
+  
+  .score-percentage {
+    font-size: 24px;
+  }
+  
+  .result-message {
+    font-size: 20px;
+  }
+  
+  .result-actions {
+    flex-direction: column;
+  }
+  
+  .play-again-btn,
+  .view-history-btn {
+    width: 100%;
+  }
+}
